@@ -118,6 +118,62 @@ laundry-management-system/
    chmod -R 777 delivery_photo/
    ```
 
+## 🔒 Security & Configuration Management
+
+### Sample Configuration Files
+For security reasons, sensitive configuration files are not included in the repository. Instead, sample template files are provided:
+
+- `application/config/database.sample.php` - Database configuration template
+- `application/config/config.sample.php` - Main configuration template  
+- `application/config/constants.sample.php` - Constants template
+
+### Setting Up Configuration Files
+
+1. **Copy sample files to actual config files:**
+   ```bash
+   cp application/config/database.sample.php application/config/database.php
+   cp application/config/config.sample.php application/config/config.php
+   cp application/config/constants.sample.php application/config/constants.php
+   ```
+
+2. **Update the copied files with your actual values:**
+   - Database credentials
+   - Base URL
+   - API keys and secrets
+   - Environment-specific settings
+
+### What's Protected
+The following files are excluded from version control via `.gitignore`:
+- `application/config/database.php` - Contains database credentials
+- `application/config/config.php` - Contains base URL and secrets
+- `application/logs/` - Application log files
+- `barcode/` - Generated barcode images
+- `pickup_photo/` - Customer pickup photos
+- `delivery_photo/` - Delivery proof photos
+
+### Database Setup Notes
+Due to MySQL compatibility issues with CodeIgniter 3.x and MySQL 8.0+:
+
+1. **Create a dedicated database user** (recommended over using root):
+   ```sql
+   CREATE USER 'laundry_dev'@'localhost' IDENTIFIED BY 'your_password';
+   CREATE DATABASE laundry_local;
+   GRANT ALL PRIVILEGES ON laundry_local.* TO 'laundry_dev'@'localhost';
+   FLUSH PRIVILEGES;
+   ```
+
+2. **Disable MySQL strict mode** if encountering GROUP BY errors:
+   ```sql
+   SET GLOBAL sql_mode = '';
+   ```
+
+3. **Import the database:**
+   ```bash
+   mysql -u laundry_dev -p laundry_local < dbase/laundry.sql
+   ```
+
+For detailed database troubleshooting, see: `docs/DATABASE_TROUBLESHOOTING.md`
+
 ### Default Login Credentials
 
 **Admin Panel:**
@@ -252,8 +308,14 @@ Language files located in: `application/language/`
 1. **Database Connection Error**
    - Check database credentials in `application/config/database.php`
    - Ensure MySQL service is running
+   - **Note**: See `docs/DATABASE_TROUBLESHOOTING.md` for detailed MySQL setup issues and solutions
 
-2. **Permission Denied**
+2. **Configuration Files Missing**
+   - Copy sample files: `cp application/config/*.sample.php application/config/`
+   - Update with your actual credentials and settings
+   - Ensure `.gitignore` is protecting sensitive files
+
+3. **Permission Denied**
    - Set proper file permissions: `chmod -R 755 application/`
    - Ensure web server has write access to logs and upload directories
 
@@ -295,9 +357,10 @@ For support and questions:
 
 ## 📚 Additional Documentation
 
-- [API Documentation](docs/api.md) (if available)
-- [Database Schema](docs/database.md) (if available)
-- [Deployment Guide](docs/deployment.md) (if available)
+- [Database Troubleshooting Guide](docs/DATABASE_TROUBLESHOOTING.md) - MySQL setup issues and solutions
+- [MySQL Issues Summary](MYSQL_ISSUES_SUMMARY.md) - Quick reference for database problems
+- [Development Guidelines](.copilot-rules.md) - Coding standards and best practices
+- [Contributing Guidelines](contributing.md) - How to contribute to the project
 
 ---
 
