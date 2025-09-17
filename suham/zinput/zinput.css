@@ -1,0 +1,45 @@
+
+.zInputWrapper{
+background-color:transparent;
+border-radius:2px;
+display:inline-block;
+}
+
+.zInput{
+display:inline-block;
+width: 90px;
+height:45px;
+background-color: white;
+margin-left:2px;
+padding: 0px;
+text-align:center;
+cursor:default;
+color: #ddd;
+border: #ddd 1px solid;
+border-radius:5px;
+font-size: 16px;
+overflow:hidden;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+.zCheckbox{
+color: #ddd;
+border: #000099 1px solid;
+}
+
+.zSelected{
+color: #000;
+background-color:#fff;
+border: #000 1px solid;
+}
+
+.zSelected.zCheckbox{
+background-color: #000;
+
+}

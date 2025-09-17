@@ -1,0 +1,67 @@
+
+            html {
+                font-family: "Verdana";
+				padding:5px;
+            }
+            .content {
+                width: 58mm;
+                font-size: 9px;
+                padding-right: 12px;
+            }
+            .content .title {
+                text-align: center;
+            }
+            .content .head-desc {
+                margin-top: 10px;
+                display: table;
+                width: 100%;
+            }
+            .content .head-desc > div {
+                display: table-cell;
+            }
+            .content .head-desc .user {
+                text-align: right;
+            }
+            .content .nota {
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .content .separate {
+                margin-top: 10px;
+                margin-bottom: 15px;
+                border-top: 1px dashed #000;
+            }
+            .content .transaction-table {
+                width: 100%;
+                font-size: 10px;
+            }
+            .content .transaction-table .name {
+                width: 185px;
+            }
+            .content .transaction-table .qty {
+                text-align: center;
+            }
+            .content .transaction-table .sell-price, .content .transaction-table .final-price {
+                text-align: right;
+                width: 65px;
+				
+            }
+            .content .transaction-table tr td {
+                vertical-align: top;
+            }
+            .content .transaction-table .price-tr td {
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .content .transaction-table .discount-tr td {
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .content .transaction-table .separate-line {
+                height: 1px;
+                border-top: 1px dashed #000;
+				margin:3px;
+				
+            }
+           

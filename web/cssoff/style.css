@@ -1,0 +1,62 @@
+/* 1. CSS RESET
+================================================================================ */
+
+h1, h2, h3, h4, h5, h6, li, p, ul { border: 0; margin: 0; padding: 0;}
+ol, ul {list-style: none;}
+li {display: list-item;}
+
+/* HEADINGS
+----------------------------------------------------------------------------- */
+h4{
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    color: #707070;
+    text-transform: uppercase;
+	font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px; 
+}
+/* PARAGRAPH
+----------------------------------------------------------------------------- */
+p{
+    font: 12px 'Droid Sans', sans-serif;
+    line-height: 18px;
+    color: #8f8f8f;
+}
+/* ARTICLE SLIDER
+----------------------------------------------------------------------------- */
+.grid_3.carousel-article .caroufredsel_wrapper{
+    width: 100% !important;
+}
+
+.carousel-article{
+    width: 100%;
+}
+
+.grid_3.carousel-article .carousel-li > li{
+    width: 220px;
+    margin-right: 0;
+}
+
+.carousel-pagination {
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+}
+
+.carousel-pagination a {
+    background: url('http://localhost/rpc_lms_new/web/images/btn.png') no-repeat;
+    width: 19px;
+    height: 5px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+}
+
+.carousel-pagination a.selected {
+    background: url('http://localhost/rpc_lms_new/web/images/btn-active.png') no-repeat;
+    cursor: default;
+}
+
+.carousel-pagination a span {
+    display: none;
+}

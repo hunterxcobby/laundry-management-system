@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.47" height="14.853" viewBox="0 0 19.47 14.853">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #020036;
+      }
+
+      .cls-1 {
+        stroke: #020036;
+        stroke-width: 0.2px;
+      }
+    </style>
+  </defs>
+  <g id="Group_600" data-name="Group 600" transform="translate(-50.9 -650.379)">
+    <g id="truck" transform="translate(51 650.479)">
+      <g id="Group_557" data-name="Group 557" transform="translate(2.509 9.325)">
+        <g id="Group_556" data-name="Group 556">
+          <path id="Path_1215" data-name="Path 1215" class="cls-1" d="M324.815,304.4a2.664,2.664,0,1,1-2.664,2.664A2.667,2.667,0,0,1,324.815,304.4Zm0,4a1.332,1.332,0,1,0-1.332-1.332A1.333,1.333,0,0,0,324.815,308.4Z" transform="translate(-322.151 -304.403)"/>
+        </g>
+      </g>
+      <g id="Group_559" data-name="Group 559" transform="translate(11.612 9.325)">
+        <g id="Group_558" data-name="Group 558">
+          <path id="Path_1216" data-name="Path 1216" class="cls-1" d="M104.311,304.4a2.664,2.664,0,1,1-2.664,2.664A2.667,2.667,0,0,1,104.311,304.4Zm0,4a1.332,1.332,0,1,0-1.332-1.332A1.333,1.333,0,0,0,104.311,308.4Z" transform="translate(-101.647 -304.403)"/>
+        </g>
+      </g>
+      <g id="Group_561" data-name="Group 561" transform="translate(1.381 1.332)">
+        <g id="Group_560" data-name="Group 560">
+          <path id="Path_1217" data-name="Path 1217" class="cls-1" d="M332.754,111.157a.666.666,0,0,1,.6-.367h3.508v1.332h-3.1l-1.814,3.607-1.191-.6Z" transform="translate(-330.756 -110.79)"/>
+        </g>
+      </g>
+      <g id="Group_563" data-name="Group 563" transform="translate(7.171 11.345)">
+        <g id="Group_562" data-name="Group 562">
+          <rect id="Rectangle_248" data-name="Rectangle 248" class="cls-1" width="5.04" height="1.332"/>
+        </g>
+      </g>
+      <g id="Group_565" data-name="Group 565" transform="translate(15.608 11.345)">
+        <g id="Group_564" data-name="Group 564">
+          <path id="Path_1218" data-name="Path 1218" class="cls-1" d="M46.381,353.345H48.69a.666.666,0,0,1,0,1.332H46.381a.666.666,0,1,1,0-1.332Z" transform="translate(-45.715 -353.345)"/>
+        </g>
+      </g>
+      <g id="Group_567" data-name="Group 567" transform="translate(0 0)">
+        <g id="Group_566" data-name="Group 566">
+          <path id="Path_1219" data-name="Path 1219" class="cls-1" d="M45.855,85.794l1.31-1.687a.665.665,0,0,1,.526-.258h4.84V79.187a.666.666,0,0,1,.666-.666H64.3a.666.666,0,1,1,0,1.332H53.863v4.662a.666.666,0,0,1-.666.666h-5.18l-.97,1.25v3.435H48.89a.666.666,0,0,1,0,1.332H46.381a.666.666,0,0,1-.666-.666V86.2A.667.667,0,0,1,45.855,85.794Z" transform="translate(-45.715 -78.521)"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_1237" data-name="Path 1237" class="cls-2" d="M0,0,1.322-.108l.048,11.66L0,12Z" transform="translate(69 651)"/>
+  </g>
+</svg>
