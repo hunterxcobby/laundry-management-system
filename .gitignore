@@ -1,0 +1,313 @@
+# Laundry Management System - Git Ignore File
+
+#########################
+# CodeIgniter Specific
+#########################
+
+# Application logs
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+# Cache files
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+# Session files
+application/sessions/*
+!application/sessions/index.html
+!application/sessions/.htaccess
+
+# User uploaded content (but keep directories)
+uploads/*
+!uploads/index.html
+!uploads/.htaccess
+
+# Barcode images (generated content)
+barcode/*.png
+barcode/*.jpg
+barcode/*.jpeg
+!barcode/index.html
+!barcode/.htaccess
+
+# Photo uploads (customer pickup/delivery photos)
+pickup_photo/*
+!pickup_photo/index.html
+!pickup_photo/.htaccess
+
+delivery_photo/*
+!delivery_photo/index.html
+!delivery_photo/.htaccess
+
+# Material uploads
+material/*
+!material/index.html
+
+#########################
+# Configuration Files
+#########################
+
+# Configuration Files (sensitive data)
+application/config/database.php
+application/config/config.php
+application/config/constants.php
+
+# Custom configuration files with sensitive data
+application/config/email.php
+application/config/encryption.php
+application/config/config_custom.php
+
+# Environment-specific configurations
+.env
+.env.local
+.env.development
+.env.production
+
+#########################
+# Development Tools
+#########################
+
+# Composer
+vendor/
+composer.lock
+composer.phar
+
+# Node.js / NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Bower
+bower_components/
+
+#########################
+# IDE and Editor Files
+#########################
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PHPStorm / IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Atom
+.atom/
+
+#########################
+# Operating System Files
+#########################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+#########################
+# Security & Sensitive Files
+#########################
+
+# Private keys and certificates
+*.key
+*.pem
+*.p12
+*.crt
+*.cer
+*.der
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+*.temp
+*~
+
+# Log files
+*.log
+error_log
+access_log
+debug.log
+
+# SQL dumps
+*.sql
+*.db
+*.sqlite
+*.sqlite3
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.tar.gz
+*.tgz
+
+#########################
+# Build and Deployment
+#########################
+
+# Build directories
+build/
+dist/
+public/build/
+
+# Deployment scripts (may contain sensitive info)
+deploy.sh
+deploy.php
+deployment/
+
+# CI/CD files (may contain secrets)
+.gitlab-ci.yml
+.github/workflows/
+.travis.yml
+circle.yml
+
+#########################
+# Testing
+#########################
+
+# PHPUnit
+.phpunit.result.cache
+phpunit.xml
+coverage/
+.coverage/
+
+# Testing databases
+test.db
+testing.sqlite
+
+#########################
+# Documentation
+#########################
+
+# Generated documentation
+docs/build/
+_site/
+
+# Temporary documentation files
+*.tmp.md
+
+#########################
+# Project Specific
+#########################
+
+# Customer data exports
+exports/
+reports/
+customer_data/
+
+# Temporary order files
+temp_orders/
+order_exports/
+
+# Payment gateway logs
+payment_logs/
+transaction_logs/
+
+# Mobile app builds
+mobile/build/
+mobile/dist/
+
+# Third-party integrations
+sms_logs/
+email_logs/
+whatsapp_logs/
+
+# Performance monitoring
+performance/
+profiling/
+
+#########################
+# Exceptions (Force Include)
+#########################
+
+# Keep important empty directories
+!.gitkeep
+
+# Keep essential config templates
+!application/config/config.sample.php
+!application/config/database.sample.php
+
+# Keep index.html security files
+!index.html
+!*/index.html
+
+# Keep .htaccess files
+!.htaccess
+!*/.htaccess
+
+# Keep important documentation
+!README.md
+!readme.rst
+!LICENSE
+!license.txt
+!.copilot-rules.md
+
+# Keep essential assets
+!assets/css/
+!assets/js/
+!assets/images/
+!assets/fonts/
+
+# Keep system files
+!system/
